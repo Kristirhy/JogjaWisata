@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/background"
+        tools:context=".fragment.BerandaFragment">
+
+    <ImageView
+            android:layout_width="372dp"
+            android:layout_height="172dp"
+            android:src="@drawable/jogja"
+            android:layout_gravity="center"
+            android:id="@+id/logo"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/logo">
+
+        <GridView
+                android:id="@+id/gvWisata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="150dp"
+                android:horizontalSpacing="15dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="15dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
