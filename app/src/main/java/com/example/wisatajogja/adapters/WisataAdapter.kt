@@ -2,6 +2,7 @@ package com.example.wisatajogja.adapters
 
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.util.Log.e
 import android.view.LayoutInflater
@@ -37,6 +38,7 @@ class WisataAdapter : BaseAdapter{
 
         val wisata = listWisata.get(position)
         x = wisata.idWisata
+        val y = wisata.idKategori
 
         imgList=viewss!!.findViewById(R.id.imgList)
         tv_wisata=viewss.findViewById(R.id.tv_wisata)
@@ -46,8 +48,12 @@ class WisataAdapter : BaseAdapter{
         Glide.with(ctx).load("http://172.16.10.11:8000/"+wisata.imgWisata).error(R.mipmap.ic_launcher).into(imgList)
         viewss.setOnClickListener {
 //            Toast.makeText(ctx, "Coba Lagi ${x} ", Toast.LENGTH_SHORT).show()
+            val b = Bundle()
+            b.putString("ids", x)
         var intent = Intent(ctx, ActivityDetailWisata::class.java)
-            intent.putExtra("ids", x)
+//            intent.putExtra("ids", x)
+//            intent.putExtra("id", y)
+            intent.putExtras(b)
             ctx.startActivity(intent)
         }
         return viewss

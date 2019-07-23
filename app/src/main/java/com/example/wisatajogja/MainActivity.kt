@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 fragmentTransaction.replace(R.id.frameLayout, fragment)
                 fragmentTransaction.commit()
             }
-            R.id.nav_logout-> Toast.makeText(this, "Clicked item four", Toast.LENGTH_SHORT).show()
+//            R.id.nav_logout-> Toast.makeText(this, "Clicked item four", Toast.LENGTH_SHORT).show()
         }
         drawer.closeDrawer(GravityCompat.START)
         return true

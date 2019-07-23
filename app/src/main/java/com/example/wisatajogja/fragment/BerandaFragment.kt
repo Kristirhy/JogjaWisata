@@ -8,14 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.GridView
 import com.example.wisatajogja.R
 import com.example.wisatajogja.activity.ActivityWisataAlam
 import com.example.wisatajogja.activity.ActivityWisataKuliner
 import com.example.wisatajogja.activity.ActivityWisataPantai
 import com.example.wisatajogja.activity.ActivityWisataSejarah
 import kotlinx.android.synthetic.main.fragment_beranda.*
-import kotlinx.android.synthetic.main.layout_adapter.*
 import kotlinx.android.synthetic.main.layout_adapter.view.*
 
 class BerandaFragment : Fragment() {
@@ -45,7 +43,7 @@ class BerandaFragment : Fragment() {
         adapter = ImageAdapter(context!!.applicationContext, homeAdapter)
 
         gvWisata.adapter = adapter
-        gvWisata.setOnItemClickListener{ parent, view, position, id ->
+        gvWisata.setOnItemClickListener { parent, view, position, id ->
             if (position == 0) {
                 //Toast.makeText(this, "Anda memilih: 0",Toast.LENGTH_SHORT).show()
                 val intent = Intent(context!!.applicationContext, ActivityWisataAlam::class.java)
@@ -62,7 +60,8 @@ class BerandaFragment : Fragment() {
 //                Toast.makeText(this, "Anda memilih: 3", Toast.LENGTH_SHORT).show()
                 val intent = Intent(context!!.applicationContext, ActivityWisataKuliner::class.java)
                 startActivity(intent)
-            }}
+            }
+        }
 //        imgList.alpha = 0.7F
     }
 
@@ -98,5 +97,5 @@ class BerandaFragment : Fragment() {
             return homeView
         }
     }
-    }
+}
 

@@ -18,6 +18,7 @@ class ActivityWisataPantai : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wisata_alam)
         tv_idwisata.text = "Wisata Pantai"
+        wts.setBackgroundResource(R.drawable.pan)
 
         gvWisataAlam = findViewById(R.id.gvWisataAlam)
 

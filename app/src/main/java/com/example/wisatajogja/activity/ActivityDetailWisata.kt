@@ -15,7 +15,19 @@ class ActivityDetailWisata : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_detail_wisata)
 
-        val x=intent.getStringExtra("ids")
+        val b = intent.extras
+        val x:String? = b!!.getString("ids")
+        val y:String? = b.getString("id")
+
+        if (y.equals("1")){
+
+        } else if (y.equals("2")){
+
+        } else if (y.equals("3")) {
+
+        } else{
+
+        }
         Toast.makeText(this, "Pantai ${x} ", Toast.LENGTH_SHORT).show()
         val modelize = ViewModelProviders.of(this).get(DataWisataViewModel::class.java)
         modelize.datadata.observeForever {
@@ -27,7 +39,7 @@ class ActivityDetailWisata : AppCompatActivity() {
                     tvAlamat.setText(data.alamat)
                     break
                 } else{
-                    Toast.makeText(this, "Data Tidak Tersedia", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(this, "Data Tidak Tersedia", Toast.LENGTH_SHORT).show()
                 }
             }
         }

@@ -23,7 +23,7 @@
             <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/jogja"
+                    app:srcCompat="@drawable/sarkom"
                     android:id="@+id/imageView2"/>
 
             <TextView
@@ -32,7 +32,7 @@
                     android:textStyle="bold"
                     android:textColor="#000"
                     android:textAlignment="center"
-                    android:text="APLIKASI PENCARIAN INFO TEMPAT WISATA Di KOTA JOGJA"
+                    android:text="APLIKASI PENCARIAN INFO TEMPAT WISATA DI KOTA JOGJA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"/>

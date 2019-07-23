@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<group android:checkableBehavior="single">-->
     <item
             android:id="@+id/nav_beranda"
             android:icon="@drawable/ic_home"
             android:title="Beranda"/>
-    <!--<item-->
-            <!--android:id="@+id/nav_peta"-->
-            <!--android:icon="@drawable/ic_map"-->
-            <!--android:title="Peta"/>-->
-    <!--&lt;!&ndash;</group>&ndash;&gt;-->
 
     <item android:title="Aplikasi">
         <menu>
@@ -20,8 +14,4 @@
                     android:title="Informasi"/>
         </menu>
     </item>
-    <item
-            android:id="@+id/nav_logout"
-            android:title="Log Out"/>
-
 </menu>
