@@ -18,6 +18,7 @@ class ActivityWisataKuliner :AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wisata_alam)
         tv_idwisata.text = "Wisata Kuliner"
+        wts.setBackgroundResource(R.drawable.kul)
 
         gvWisataAlam = findViewById(R.id.gvWisataAlam)
 

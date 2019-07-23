@@ -12,6 +12,7 @@
             android:orientation="vertical"
             android:layout_margin="20dp"
             android:gravity="center"
+            android:background="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
@@ -19,11 +20,13 @@
                 android:id="@+id/tv_idwisata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item"
                 android:text="Wisata Alam"
-                android:textSize="24sp"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
                 android:layout_marginBottom="15dp"
-                android:textColor="@color/Red"
+                android:textColor="@color/Maroon"
                 android:textAlignment="center"/>
         <GridView
                 android:id="@+id/gvWisataAlam"
